@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>IPA.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>hotel copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>hotel.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>69B9AE58137362550017EC40</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>69B9AE871373631F0017EC40</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C9363DE1135807B000941D8A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C9363E0A135807B000941D8A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
