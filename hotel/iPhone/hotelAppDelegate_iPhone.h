@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "hotelAppDelegate.h"
+#import "PCWorkflowController.h"
 
-@interface hotelAppDelegate_iPhone : hotelAppDelegate<UIWebViewDelegate> {
+@interface hotelAppDelegate_iPhone : hotelAppDelegate<UIWebViewDelegate, PCWorkflowControllerDelegate> {
     IBOutlet UIWebView *webView;
 	IBOutlet UIActivityIndicatorView *activityIndicator;
     IBOutlet UIButton *navButton;
@@ -19,6 +20,7 @@
 @property(nonatomic,retain) UIActivityIndicatorView *activityIndicator;
 @property(nonatomic,retain) UIButton *navButton;
 
--(IBAction) loadProfile:(id)sender;
+- (IBAction)loadProfile:(id)sender;
+- (IBAction)sendPostcard:(id)sender;
 
 @end

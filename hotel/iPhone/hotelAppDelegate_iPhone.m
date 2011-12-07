@@ -89,4 +89,42 @@
 	[super dealloc];
 }
 
+#pragma mark - 
+#pragma mark Postcard on the Run
+
+- (IBAction)sendPostcard:(id)sender;
+{
+
+}
+
+- (BOOL)allowPhotoEditing;
+{
+    return YES;
+}
+
+- (BOOL)allowStatisticsGathering;
+{
+    return YES;
+}
+
+- (BOOL)useLocationServices;
+{
+    return YES;
+}
+
+- (BOOL)showCancelButton;
+{
+    return YES;
+}
+
+- (UIColor *)tintColor;
+{
+    return [UIColor colorWithRed:( 158.0f / 255.0f ) green:( 141.0f / 255.0f ) blue:( 94.0f / 255.0f ) alpha:1.0f];
+}
+
+- (void)pcotr:(UIViewController *)pcotr canceled:(BOOL)canceled;
+{
+#warning put web view back...
+}
+
 @end
