@@ -10,17 +10,11 @@
 #import "hotelAppDelegate.h"
 #import "PCWorkflowController.h"
 
-@interface hotelAppDelegate_iPhone : hotelAppDelegate<UIWebViewDelegate, PCWorkflowControllerDelegate> {
-    IBOutlet UIWebView *webView;
-	IBOutlet UIActivityIndicatorView *activityIndicator;
-    IBOutlet UIButton *navButton;
+@interface hotelAppDelegate_iPhone : hotelAppDelegate<PCWorkflowControllerDelegate>
+{
+    PCWorkflowController *_postcardsController;
 }
 
-@property(nonatomic,retain) UIWebView *webView;
-@property(nonatomic,retain) UIActivityIndicatorView *activityIndicator;
-@property(nonatomic,retain) UIButton *navButton;
-
-- (IBAction)loadProfile:(id)sender;
-- (IBAction)sendPostcard:(id)sender;
+@property(retain, nonatomic) PCWorkflowController *postcardsController;
 
 @end

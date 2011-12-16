@@ -7,95 +7,38 @@
 //
 
 #import "hotelAppDelegate_iPhone.h"
+#import "HotelRootViewController.h"
 
 @implementation hotelAppDelegate_iPhone
-@synthesize webView, activityIndicator, navButton;
+
+@synthesize postcardsController = _postcardsController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    HotelRootViewController *rootViewController = [[HotelRootViewController alloc] initWithNibName:@"HotelRootViewController" bundle:nil];
+    PCWorkflowController *postcardsController = [[PCWorkflowController alloc] initWithAPIKey:@"be7c371e881990ce085ef4e26c7eab93acda645"];
+#warning enter your account's API key.
     
-    [webView setHidden:YES];
-    //[navButton setHidden:YES];
-	NSString *urlAddress = @"http://m.runtriz.com/viceroyanguilla/app/iphone/index.php";
-	NSURL *url = [NSURL URLWithString:urlAddress];
-	NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-	
-	//NSURLResponse *resp = nil;
-	NSError *err = nil;
-	//NSData *response = [NSURLConnection sendSynchronousRequest: requestObj returningResponse: &resp error: &err];
-	if (err != nil) {
-		UIAlertView *alertView = [[UIAlertView alloc] initWithTitle: @"Network Error" 
-															message: @"We have detected that you are not connected to the internet! Please connect to a network and try again!" delegate:self
-												  cancelButtonTitle:@"OK"
-												  otherButtonTitles:nil];
-		[alertView  show];
-		[alertView  release];
-	}
-	
-	[webView loadRequest:requestObj];
+    postcardsController.delegate = self;
+    
+    [self.window setRootViewController:rootViewController];
+    [self.window makeKeyAndVisible];
+
+    self.postcardsController = postcardsController;
+    
+    [rootViewController release];
+    [postcardsController release];
     
     return YES;
 }
--(IBAction)loadProfile:(id) sender {
-	[webView setHidden:YES];
-	NSString *urlAddress = @"http://m.runtriz.com/viceroyanguilla/app/iphone/index.php";
-	
-	NSURL *url = [NSURL URLWithString:urlAddress];
-	NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-	
-	[webView loadRequest:requestObj];
-    //[navButton setHidden:YES];
-}
 
-
--(void)webViewDidStartLoad:(UIWebView *)webView {
-	[activityIndicator startAnimating];
-    [webView setHidden:YES];
-	
-}
--(void)webViewDidFinishLoad:(UIWebView *)webView {
-	[activityIndicator stopAnimating];
-	[webView setHidden:NO];
-}
-
-- (BOOL)webView:(UIWebView*)webView shouldStartLoadWithRequest:(NSURLRequest*)request navigationType:(UIWebViewNavigationType)navigationType {
-    
-    /*
-    //CAPTURE USER LINK-CLICK.
-    if (navigationType == UIWebViewNavigationTypeLinkClicked) {
-        NSURL *URL = [request URL];   
-        if ([[URL scheme] isEqualToString:@"http"]) {
-            [navButton setHidden:NO];
-            //[[UIApplication sharedApplication] openURL:URL];
-            return YES;
-        }
-        //else if ([[URL scheme] isEqualToString:@"mailto"])  {
-        //    [[UIApplication sharedApplication] openURL:URL];
-        //    return NO;
-        //}
-    } 
-     */
-    return YES;  
-}
-
-
-
-- (void)dealloc
+- (void)dealloc;
 {
-    [webView release];
-    [activityIndicator release];
-    [navButton release];
-	[super dealloc];
+    [_postcardsController release];
+    [super dealloc];
 }
 
-#pragma mark - 
 #pragma mark Postcard on the Run
-
-- (IBAction)sendPostcard:(id)sender;
-{
-
-}
 
 - (BOOL)allowPhotoEditing;
 {
@@ -124,7 +67,18 @@
 
 - (void)pcotr:(UIViewController *)pcotr canceled:(BOOL)canceled;
 {
-#warning put web view back...
+    if ( !canceled )
+    {
+        NSString *title = NSLocalizedString( @"Postcard Sent!", @"" );
+        NSString *message = NSLocalizedString( @"Your card will arrive in 3-5 business days.", @"" );
+        NSString *button = NSLocalizedString( @"Okay", @"" );
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:button otherButtonTitles:nil];
+        
+        [alert show];
+        [alert release];
+    }
+    
+    [pcotr dismissModalViewControllerAnimated:YES];
 }
 
 @end

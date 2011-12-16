@@ -113,6 +113,9 @@
 		4871DDB6148EE599008D83BB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4871DDB5148EE599008D83BB /* MobileCoreServices.framework */; };
 		4871DDB8148EE59F008D83BB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4871DDB7148EE59F008D83BB /* SystemConfiguration.framework */; };
 		4871DDBA148EE5A5008D83BB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4871DDB9148EE5A5008D83BB /* CFNetwork.framework */; };
+		4871DDC0148EEBC8008D83BB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4871DDBF148EEBC8008D83BB /* CoreLocation.framework */; };
+		48A576591496CFF500A723E6 /* HotelRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A576571496CFF500A723E6 /* HotelRootViewController.m */; };
+		48A5765A1496CFF500A723E6 /* HotelRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A576581496CFF500A723E6 /* HotelRootViewController.xib */; };
 		C9363DE7135807B000941D8A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9363DE6135807B000941D8A /* UIKit.framework */; };
 		C9363DE9135807B000941D8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9363DE8135807B000941D8A /* Foundation.framework */; };
 		C9363DEB135807B000941D8A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9363DEA135807B000941D8A /* CoreGraphics.framework */; };
@@ -259,6 +262,10 @@
 		4871DDB5148EE599008D83BB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		4871DDB7148EE59F008D83BB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4871DDB9148EE5A5008D83BB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4871DDBF148EEBC8008D83BB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		48A576561496CFF500A723E6 /* HotelRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelRootViewController.h; sourceTree = "<group>"; };
+		48A576571496CFF500A723E6 /* HotelRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelRootViewController.m; sourceTree = "<group>"; };
+		48A576581496CFF500A723E6 /* HotelRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotelRootViewController.xib; sourceTree = "<group>"; };
 		C9363DE2135807B000941D8A /* hotel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hotel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9363DE6135807B000941D8A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C9363DE8135807B000941D8A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -288,6 +295,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4871DDC0148EEBC8008D83BB /* CoreLocation.framework in Frameworks */,
 				4871DDBA148EE5A5008D83BB /* CFNetwork.framework in Frameworks */,
 				4871DDB8148EE59F008D83BB /* SystemConfiguration.framework in Frameworks */,
 				4871DDB6148EE599008D83BB /* MobileCoreServices.framework in Frameworks */,
@@ -504,6 +512,7 @@
 		C9363DE5135807B000941D8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4871DDBF148EEBC8008D83BB /* CoreLocation.framework */,
 				4871DDB9148EE5A5008D83BB /* CFNetwork.framework */,
 				4871DDB7148EE59F008D83BB /* SystemConfiguration.framework */,
 				4871DDB5148EE599008D83BB /* MobileCoreServices.framework */,
@@ -548,6 +557,9 @@
 				C9363DF9135807B000941D8A /* hotelAppDelegate_iPhone.h */,
 				C9363DFA135807B000941D8A /* hotelAppDelegate_iPhone.m */,
 				C9363DFC135807B000941D8A /* MainWindow_iPhone.xib */,
+				48A576561496CFF500A723E6 /* HotelRootViewController.h */,
+				48A576571496CFF500A723E6 /* HotelRootViewController.m */,
+				48A576581496CFF500A723E6 /* HotelRootViewController.xib */,
 			);
 			name = iPhone;
 			sourceTree = "<group>";
@@ -721,6 +733,7 @@
 				4871DDA6148EE319008D83BB /* PCSenderInfoViewController.xib in Resources */,
 				4871DDA7148EE319008D83BB /* PCSignaturePadViewController.xib in Resources */,
 				4871DDA8148EE319008D83BB /* PCSmellMailViewController.xib in Resources */,
+				48A5765A1496CFF500A723E6 /* HotelRootViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -787,6 +800,7 @@
 				4871DD3A148EE09D008D83BB /* UIImage+Alpha.m in Sources */,
 				4871DD3B148EE09D008D83BB /* UIImage+Resize.m in Sources */,
 				4871DD3C148EE09D008D83BB /* UIImage+RoundedCorner.m in Sources */,
+				48A576591496CFF500A723E6 /* HotelRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -867,8 +881,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
@@ -888,8 +902,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -907,8 +921,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -932,8 +946,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hotel/hotel-Prefix.pch";
