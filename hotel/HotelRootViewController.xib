@@ -105,7 +105,7 @@
 						</object>
 						<object class="NSCustomResource" key="IBUINormalImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">bottom_button_iphone.png</string>
+							<string key="NSResourceName">btn_vic_home.png</string>
 						</object>
 						<object class="IBUIFontDescription" key="IBUIFontDescription" id="52813550">
 							<string key="name">Helvetica-Bold</string>
@@ -131,13 +131,16 @@
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
 						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">Postcard</string>
 						<reference key="IBUIHighlightedTitleColor" ref="930363454"/>
 						<object class="NSColor" key="IBUINormalTitleColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="78195798"/>
+						<object class="NSCustomResource" key="IBUINormalImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">btn_vic_postcard.png</string>
+						</object>
 						<reference key="IBUIFontDescription" ref="52813550"/>
 						<reference key="IBUIFont" ref="134885268"/>
 					</object>
@@ -336,7 +339,8 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="bottom_button_iphone.png">{320, 40}</string>
+			<string key="btn_vic_home.png">{37, 9}</string>
+			<string key="btn_vic_postcard.png">{63, 9}</string>
 			<string key="iphone_bg.png">{320, 460}</string>
 		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">933</string>
