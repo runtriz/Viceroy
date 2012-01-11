@@ -16,8 +16,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     HotelRootViewController *rootViewController = [[HotelRootViewController alloc] initWithNibName:@"HotelRootViewController" bundle:nil];
-    PCWorkflowController *postcardsController = [[PCWorkflowController alloc] initWithAPIKey:@""];
-#warning enter your account's API key.
+    PCWorkflowController *postcardsController = [[PCWorkflowController alloc] initWithAPIKey:@"68d147ab9464e15545dbc86b3ee835829ee99cb"];
     
     postcardsController.delegate = self;
     
