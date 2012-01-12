@@ -6,17 +6,17 @@
 //  Copyright (c) 2011 ELC Technologies. All rights reserved.
 //
 
-#import "HotelRootViewController.h"
+#import "HotelRootViewController_iPhone.h"
 #import "PCWorkflowController.h"
-#import "hotelAppDelegate_iPhone.h"
 
-@implementation HotelRootViewController
+@implementation HotelRootViewController_iPhone
 
-#pragma mark API
 
 @synthesize webView = _webView;
 @synthesize activityIndicator = _activityIndicator;
 @synthesize navButton = _navButton;
+@synthesize postcardsController = _postcardsController;
+
 
 - (IBAction)loadProfile:(id)sender;
 {
@@ -59,6 +59,12 @@
 - (void)viewDidLoad;
 {
     [super viewDidLoad];
+    
+    PCWorkflowController *postcardsController = [[PCWorkflowController alloc] initWithAPIKey:@"68d147ab9464e15545dbc86b3ee835829ee99cb"];
+    postcardsController.delegate = self;
+    self.postcardsController = postcardsController;
+
+    
 
     [self.webView setHidden:YES];
     [self.webView setDelegate:self];
@@ -87,6 +93,8 @@
     [_webView release];
     [_activityIndicator release];
     [_navButton release];
+    [_postcardsController release];
+
     
 	[super dealloc];
 }
@@ -101,11 +109,11 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info;
 {
     UIImage *photo = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
-    PCWorkflowController *postcardsController = [((hotelAppDelegate_iPhone *)[[UIApplication sharedApplication] delegate]) postcardsController];
+ 
     
     [self dismissModalViewControllerAnimated:NO];
     
-    if ( ![postcardsController isValidPostcardPhoto:photo] )
+    if ( ![self.postcardsController isValidPostcardPhoto:photo] )
     {
         NSString *title = NSLocalizedString( @"Photo Not Usable", @"" );
         NSString *message = NSLocalizedString( @"Sorry, the photo you took does not have sufficient resolution for printing. Please try again.", @"" );
@@ -127,9 +135,30 @@
     }
     else
     {
-        UIViewController *viewController = [postcardsController modalViewControllerForPhoto:photo];
+        UIViewController *viewController = [self.postcardsController modalViewControllerForPhoto:photo];
         [self presentModalViewController:viewController animated:YES];
     }
+}
+
+- (UIColor *)tintColor;
+{
+    return [UIColor colorWithRed:( 158.0f / 255.0f ) green:( 141.0f / 255.0f ) blue:( 94.0f / 255.0f ) alpha:1.0f];
+}
+
+- (void)pcotr:(UIViewController *)pcotr canceled:(BOOL)canceled;
+{
+    if ( !canceled )
+    {
+        NSString *title = NSLocalizedString( @"Postcard Sent!", @"" );
+        NSString *message = NSLocalizedString( @"Your card will arrive in 3-5 business days.", @"" );
+        NSString *button = NSLocalizedString( @"Okay", @"" );
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:button otherButtonTitles:nil];
+        
+        [alert show];
+        [alert release];
+    }
+    
+    [pcotr dismissModalViewControllerAnimated:YES];
 }
 
 #pragma mark UIWebViewDelegate

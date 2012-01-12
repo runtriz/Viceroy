@@ -103,18 +103,17 @@
 		4871DDB8148EE59F008D83BB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4871DDB7148EE59F008D83BB /* SystemConfiguration.framework */; };
 		4871DDBA148EE5A5008D83BB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4871DDB9148EE5A5008D83BB /* CFNetwork.framework */; };
 		4871DDC0148EEBC8008D83BB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4871DDBF148EEBC8008D83BB /* CoreLocation.framework */; };
-		48A576591496CFF500A723E6 /* HotelRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A576571496CFF500A723E6 /* HotelRootViewController.m */; };
-		48A5765A1496CFF500A723E6 /* HotelRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A576581496CFF500A723E6 /* HotelRootViewController.xib */; };
+		48A576591496CFF500A723E6 /* HotelRootViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A576571496CFF500A723E6 /* HotelRootViewController_iPhone.m */; };
+		48A5765A1496CFF500A723E6 /* HotelRootViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A576581496CFF500A723E6 /* HotelRootViewController_iPhone.xib */; };
+		B6905D7814BE543200405F15 /* HotelRootViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = B6905D7614BE543200405F15 /* HotelRootViewController_iPad.m */; };
+		B6905D7914BE543200405F15 /* HotelRootViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6905D7714BE543200405F15 /* HotelRootViewController_iPad.xib */; };
+		B6905D8314BE62DA00405F15 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6905D8214BE62DA00405F15 /* Entitlements.plist */; };
 		C9363DE7135807B000941D8A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9363DE6135807B000941D8A /* UIKit.framework */; };
 		C9363DE9135807B000941D8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9363DE8135807B000941D8A /* Foundation.framework */; };
 		C9363DEB135807B000941D8A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9363DEA135807B000941D8A /* CoreGraphics.framework */; };
 		C9363DF1135807B000941D8A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9363DEF135807B000941D8A /* InfoPlist.strings */; };
 		C9363DF4135807B000941D8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9363DF3135807B000941D8A /* main.m */; };
 		C9363DF7135807B000941D8A /* hotelAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9363DF6135807B000941D8A /* hotelAppDelegate.m */; };
-		C9363DFB135807B000941D8A /* hotelAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = C9363DFA135807B000941D8A /* hotelAppDelegate_iPhone.m */; };
-		C9363DFE135807B000941D8A /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9363DFC135807B000941D8A /* MainWindow_iPhone.xib */; };
-		C9363E02135807B000941D8A /* hotelAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = C9363E01135807B000941D8A /* hotelAppDelegate_iPad.m */; };
-		C9363E05135807B000941D8A /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9363E03135807B000941D8A /* MainWindow_iPad.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -233,9 +232,13 @@
 		4871DDB7148EE59F008D83BB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4871DDB9148EE5A5008D83BB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		4871DDBF148EEBC8008D83BB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		48A576561496CFF500A723E6 /* HotelRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelRootViewController.h; sourceTree = "<group>"; };
-		48A576571496CFF500A723E6 /* HotelRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelRootViewController.m; sourceTree = "<group>"; };
-		48A576581496CFF500A723E6 /* HotelRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotelRootViewController.xib; sourceTree = "<group>"; };
+		48A576561496CFF500A723E6 /* HotelRootViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelRootViewController_iPhone.h; sourceTree = "<group>"; };
+		48A576571496CFF500A723E6 /* HotelRootViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelRootViewController_iPhone.m; sourceTree = "<group>"; };
+		48A576581496CFF500A723E6 /* HotelRootViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotelRootViewController_iPhone.xib; sourceTree = "<group>"; };
+		B6905D7514BE543200405F15 /* HotelRootViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelRootViewController_iPad.h; sourceTree = "<group>"; };
+		B6905D7614BE543200405F15 /* HotelRootViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelRootViewController_iPad.m; sourceTree = "<group>"; };
+		B6905D7714BE543200405F15 /* HotelRootViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotelRootViewController_iPad.xib; sourceTree = "<group>"; };
+		B6905D8214BE62DA00405F15 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		C9363DE2135807B000941D8A /* hotel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hotel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9363DE6135807B000941D8A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C9363DE8135807B000941D8A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -246,12 +249,6 @@
 		C9363DF3135807B000941D8A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C9363DF5135807B000941D8A /* hotelAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hotelAppDelegate.h; sourceTree = "<group>"; };
 		C9363DF6135807B000941D8A /* hotelAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hotelAppDelegate.m; sourceTree = "<group>"; };
-		C9363DF9135807B000941D8A /* hotelAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = hotelAppDelegate_iPhone.h; path = iPhone/hotelAppDelegate_iPhone.h; sourceTree = "<group>"; };
-		C9363DFA135807B000941D8A /* hotelAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = hotelAppDelegate_iPhone.m; path = iPhone/hotelAppDelegate_iPhone.m; sourceTree = "<group>"; };
-		C9363DFD135807B000941D8A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
-		C9363E00135807B000941D8A /* hotelAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = hotelAppDelegate_iPad.h; path = iPad/hotelAppDelegate_iPad.h; sourceTree = "<group>"; };
-		C9363E01135807B000941D8A /* hotelAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = hotelAppDelegate_iPad.m; path = iPad/hotelAppDelegate_iPad.m; sourceTree = "<group>"; };
-		C9363E04135807B000941D8A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
 		C9363E13135807B000941D8A /* hotelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "hotelTests-Info.plist"; sourceTree = "<group>"; };
 		C9363E15135807B000941D8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C9363E17135807B000941D8A /* hotelTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hotelTests-Prefix.pch"; sourceTree = "<group>"; };
@@ -437,6 +434,7 @@
 		C9363DD7135807B000941D8A = {
 			isa = PBXGroup;
 			children = (
+				B6905D8214BE62DA00405F15 /* Entitlements.plist */,
 				4871DCEA148ED87F008D83BB /* bottom_button_ipad.png */,
 				4871DCEB148ED87F008D83BB /* bottom_button_iphone.png */,
 				4871DCEC148ED87F008D83BB /* Default-Landscape~ipad.png */,
@@ -516,12 +514,9 @@
 		C9363DF8135807B000941D8A /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
-				C9363DF9135807B000941D8A /* hotelAppDelegate_iPhone.h */,
-				C9363DFA135807B000941D8A /* hotelAppDelegate_iPhone.m */,
-				C9363DFC135807B000941D8A /* MainWindow_iPhone.xib */,
-				48A576561496CFF500A723E6 /* HotelRootViewController.h */,
-				48A576571496CFF500A723E6 /* HotelRootViewController.m */,
-				48A576581496CFF500A723E6 /* HotelRootViewController.xib */,
+				48A576561496CFF500A723E6 /* HotelRootViewController_iPhone.h */,
+				48A576571496CFF500A723E6 /* HotelRootViewController_iPhone.m */,
+				48A576581496CFF500A723E6 /* HotelRootViewController_iPhone.xib */,
 			);
 			name = iPhone;
 			sourceTree = "<group>";
@@ -529,9 +524,9 @@
 		C9363DFF135807B000941D8A /* iPad */ = {
 			isa = PBXGroup;
 			children = (
-				C9363E00135807B000941D8A /* hotelAppDelegate_iPad.h */,
-				C9363E01135807B000941D8A /* hotelAppDelegate_iPad.m */,
-				C9363E03135807B000941D8A /* MainWindow_iPad.xib */,
+				B6905D7514BE543200405F15 /* HotelRootViewController_iPad.h */,
+				B6905D7614BE543200405F15 /* HotelRootViewController_iPad.m */,
+				B6905D7714BE543200405F15 /* HotelRootViewController_iPad.xib */,
 			);
 			name = iPad;
 			sourceTree = "<group>";
@@ -607,8 +602,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9363DF1135807B000941D8A /* InfoPlist.strings in Resources */,
-				C9363DFE135807B000941D8A /* MainWindow_iPhone.xib in Resources */,
-				C9363E05135807B000941D8A /* MainWindow_iPad.xib in Resources */,
 				4871DCF3148ED87F008D83BB /* bottom_button_ipad.png in Resources */,
 				4871DCF4148ED87F008D83BB /* bottom_button_iphone.png in Resources */,
 				4871DCF5148ED87F008D83BB /* Default-Landscape~ipad.png in Resources */,
@@ -677,11 +670,13 @@
 				4871DDA6148EE319008D83BB /* PCSenderInfoViewController.xib in Resources */,
 				4871DDA7148EE319008D83BB /* PCSignaturePadViewController.xib in Resources */,
 				4871DDA8148EE319008D83BB /* PCSmellMailViewController.xib in Resources */,
-				48A5765A1496CFF500A723E6 /* HotelRootViewController.xib in Resources */,
+				48A5765A1496CFF500A723E6 /* HotelRootViewController_iPhone.xib in Resources */,
 				4850834C149FE81B00DD2F2D /* btn_vic_postcard@2x.png in Resources */,
 				4850834D149FE81B00DD2F2D /* btn_vic_home@2x.png in Resources */,
 				4850834E149FE81B00DD2F2D /* btn_vic_home.png in Resources */,
 				4850834F149FE81B00DD2F2D /* btn_vic_postcard.png in Resources */,
+				B6905D7914BE543200405F15 /* HotelRootViewController_iPad.xib in Resources */,
+				B6905D8314BE62DA00405F15 /* Entitlements.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -694,8 +689,6 @@
 			files = (
 				C9363DF4135807B000941D8A /* main.m in Sources */,
 				C9363DF7135807B000941D8A /* hotelAppDelegate.m in Sources */,
-				C9363DFB135807B000941D8A /* hotelAppDelegate_iPhone.m in Sources */,
-				C9363E02135807B000941D8A /* hotelAppDelegate_iPad.m in Sources */,
 				4871DD2E148EE09D008D83BB /* ASIAuthenticationDialog.m in Sources */,
 				4871DD2F148EE09D008D83BB /* ASIDataCompressor.m in Sources */,
 				4871DD30148EE09D008D83BB /* ASIDataDecompressor.m in Sources */,
@@ -710,7 +703,8 @@
 				4871DD3A148EE09D008D83BB /* UIImage+Alpha.m in Sources */,
 				4871DD3B148EE09D008D83BB /* UIImage+Resize.m in Sources */,
 				4871DD3C148EE09D008D83BB /* UIImage+RoundedCorner.m in Sources */,
-				48A576591496CFF500A723E6 /* HotelRootViewController.m in Sources */,
+				48A576591496CFF500A723E6 /* HotelRootViewController_iPhone.m in Sources */,
+				B6905D7814BE543200405F15 /* HotelRootViewController_iPad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -725,22 +719,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		C9363DFC135807B000941D8A /* MainWindow_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9363DFD135807B000941D8A /* en */,
-			);
-			name = MainWindow_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		C9363E03135807B000941D8A /* MainWindow_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9363E04135807B000941D8A /* en */,
-			);
-			name = MainWindow_iPad.xib;
-			sourceTree = "<group>";
-		};
 		C9363E14135807B000941D8A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -752,13 +730,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B6905D7A14BE615200405F15 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: ELC Ventures, LLC";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: ELC Ventures, LLC";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "4B39C5EE-A7AE-4912-AFC8-08EDCFF1D518";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4B39C5EE-A7AE-4912-AFC8-08EDCFF1D518";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Ad Hoc";
+		};
+		B6905D7B14BE615200405F15 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: ELC Ventures, LLC";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: ELC Ventures, LLC";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hotel/hotel-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "hotel/hotel-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/hotel/Flurry\"",
+					"\"$(SRCROOT)/hotel\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4B39C5EE-A7AE-4912-AFC8-08EDCFF1D518";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4B39C5EE-A7AE-4912-AFC8-08EDCFF1D518";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = "Ad Hoc";
+		};
 		C9363E1C135807B000941D8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: ELC Ventures, LLC";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: ELC Ventures, LLC";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -768,8 +793,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "4B39C5EE-A7AE-4912-AFC8-08EDCFF1D518";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4B39C5EE-A7AE-4912-AFC8-08EDCFF1D518";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -780,16 +805,16 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: ELC Ventures, LLC";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: ELC Ventures, LLC";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "4B39C5EE-A7AE-4912-AFC8-08EDCFF1D518";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4B39C5EE-A7AE-4912-AFC8-08EDCFF1D518";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -800,8 +825,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Marc Charbonneau (C52AV2E2B8)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Marc Charbonneau (C52AV2E2B8)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: ELC Ventures, LLC";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: ELC Ventures, LLC";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -815,8 +840,8 @@
 					"\"$(SRCROOT)/hotel\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "F5E56112-B0CA-4420-88E3-4AF528230D52";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F5E56112-B0CA-4420-88E3-4AF528230D52";
+				PROVISIONING_PROFILE = "4B39C5EE-A7AE-4912-AFC8-08EDCFF1D518";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4B39C5EE-A7AE-4912-AFC8-08EDCFF1D518";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -826,8 +851,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Marc Charbonneau (C52AV2E2B8)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Marc Charbonneau (C52AV2E2B8)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: ELC Ventures, LLC";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: ELC Ventures, LLC";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hotel/hotel-Prefix.pch";
@@ -840,8 +865,8 @@
 					"\"$(SRCROOT)/hotel\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "F5E56112-B0CA-4420-88E3-4AF528230D52";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F5E56112-B0CA-4420-88E3-4AF528230D52";
+				PROVISIONING_PROFILE = "4B39C5EE-A7AE-4912-AFC8-08EDCFF1D518";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4B39C5EE-A7AE-4912-AFC8-08EDCFF1D518";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -856,6 +881,7 @@
 			buildConfigurations = (
 				C9363E1C135807B000941D8A /* Debug */,
 				C9363E1D135807B000941D8A /* Release */,
+				B6905D7A14BE615200405F15 /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -865,6 +891,7 @@
 			buildConfigurations = (
 				C9363E1F135807B000941D8A /* Debug */,
 				C9363E20135807B000941D8A /* Release */,
+				B6905D7B14BE615200405F15 /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

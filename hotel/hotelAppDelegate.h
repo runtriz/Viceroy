@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface hotelAppDelegate : NSObject <UIApplicationDelegate> {
+@interface hotelAppDelegate : UIResponder <UIApplicationDelegate> {
 
 }
-
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 

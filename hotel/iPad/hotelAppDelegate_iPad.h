@@ -9,16 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "hotelAppDelegate.h"
 
-@interface hotelAppDelegate_iPad : hotelAppDelegate<UIWebViewDelegate> {
-    IBOutlet UIWebView *webView;
-	IBOutlet UIActivityIndicatorView *activityIndicator;
-    IBOutlet UIButton *navButton;
+@interface hotelAppDelegate_iPad : hotelAppDelegate <UIWebViewDelegate> {
+
 }
-
-@property(nonatomic,retain) UIWebView *webView;
-@property(nonatomic,retain) UIActivityIndicatorView *activityIndicator;
-@property(nonatomic,retain) UIButton *navButton;
-
--(IBAction) loadProfile:(id)sender;
 
 @end

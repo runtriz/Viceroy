@@ -7,19 +7,29 @@
 //
 
 #import "hotelAppDelegate.h"
+#import "HotelRootViewController_iPhone.h"
+#import "HotelRootViewController_iPad.h"
 
 @implementation hotelAppDelegate
 
-@synthesize window=_window;
+@synthesize window =_window;
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
-    [self.window makeKeyAndVisible];
-    [_window makeKeyAndVisible];
+    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        HotelRootViewController_iPhone *viewController = [[[HotelRootViewController_iPhone alloc] initWithNibName:@"HotelRootViewController_iPhone" bundle:nil] autorelease];
+        self.window.rootViewController = viewController;
+    } else {
+        HotelRootViewController_iPad *viewController = [[[HotelRootViewController_iPad alloc] initWithNibName:@"HotelRootViewController_iPad" bundle:nil] autorelease];
+        self.window.rootViewController = viewController;
+    }
+    [self.window makeKeyAndVisible];
     return YES;
 }
+ 
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

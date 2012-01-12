@@ -13,15 +13,14 @@
 
 @synthesize postcardsController = _postcardsController;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
     HotelRootViewController *rootViewController = [[HotelRootViewController alloc] initWithNibName:@"HotelRootViewController" bundle:nil];
     PCWorkflowController *postcardsController = [[PCWorkflowController alloc] initWithAPIKey:@"68d147ab9464e15545dbc86b3ee835829ee99cb"];
     
     postcardsController.delegate = self;
     
-    [self.window setRootViewController:rootViewController];
     [self.window makeKeyAndVisible];
+    [self.window setRootViewController:rootViewController];
 
     self.postcardsController = postcardsController;
     
