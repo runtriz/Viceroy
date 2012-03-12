@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
+   LastUpgradeVersion = "0430"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C9363DE1135807B000941D8A"
-               BuildableName = "hotel.app"
+               BlueprintIdentifier = "48788DC214E598CA00B895AC"
+               BuildableName = "MyViceroy.app"
                BlueprintName = "hotel"
                ReferencedContainer = "container:hotel.xcodeproj">
             </BuildableReference>
@@ -27,40 +28,31 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C9363E0A135807B000941D8A"
-               BuildableName = "hotelTests.octest"
-               BlueprintName = "hotelTests"
-               ReferencedContainer = "container:hotel.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C9363DE1135807B000941D8A"
-            BuildableName = "hotel.app"
+            BlueprintIdentifier = "48788DC214E598CA00B895AC"
+            BuildableName = "MyViceroy.app"
             BlueprintName = "hotel"
             ReferencedContainer = "container:hotel.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
    <LaunchAction
-      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.GDB"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.GDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Debug"
+      ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C9363DE1135807B000941D8A"
-            BuildableName = "hotel.app"
+            BlueprintIdentifier = "48788DC214E598CA00B895AC"
+            BuildableName = "MyViceroy.app"
             BlueprintName = "hotel"
             ReferencedContainer = "container:hotel.xcodeproj">
          </BuildableReference>
@@ -77,8 +69,8 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C9363DE1135807B000941D8A"
-            BuildableName = "hotel.app"
+            BlueprintIdentifier = "48788DC214E598CA00B895AC"
+            BuildableName = "MyViceroy.app"
             BlueprintName = "hotel"
             ReferencedContainer = "container:hotel.xcodeproj">
          </BuildableReference>
